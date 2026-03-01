@@ -115,23 +115,18 @@ namespace GradeBook.GradeBooks
             {
                 case 'A':
                     return 4;
-                    break;
                 case 'B':
                     return 3;
-                    break;
                 case 'C':
                     return 2;
-                    break;
                 case 'D':
                     return 1;
-                    break;
                 case 'F':
                     return 0;
-                    break;
             }
 
             if (IsWeighted && (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled))
-            {
+            { 
                 gpa += 1;
             }
 
